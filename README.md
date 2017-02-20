@@ -3,11 +3,11 @@
 
 # Question 1 (Naked Twins)
 Q: How do we use constraint propagation to solve the naked twins problem?  
-A: *Student should provide answer here*
+A: Constraint propagation is used based on the rules defined for Sudoku plus we iterate through all the units and check for the existence of same value in multiple boxes in each units. If there is same value within the unit, then compare the length of the values with the number of boxes found with that value. If both the lengths are same, then remove the digits of this value from the values of other boxes of that particular unit. Ex: If the value of a box is 'XY' where n=2, then naked twins will try to find the value 'XY' in other boxes within that unit and if found then the value 'XY'  will be in n=2 boxes within that units. Then we eliminate the digits X&Y from values of the other boxes in the unit. 
 
 # Question 2 (Diagonal Sudoku)
 Q: How do we use constraint propagation to solve the diagonal sudoku problem?  
-A: *Student should provide answer here*
+A: Originally we apply constraint to eliminate value from all peers peers(Row Unit, Column Unit and 3x3 square unit) in case of diagonal sudoku problem in addition to this we eliminate the value(single digit) from the values of all its peers along major diagonal if the box is a part of the major diagonals.
 
 ### Install
 
